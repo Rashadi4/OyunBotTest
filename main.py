@@ -40,8 +40,8 @@ def help(update, context):
     update.message.reply_text('Mövcud əmrlər:\n' +
                               '/basla - Yeni oyun başladmaq\n' +
                               '/master - Aparıcı olmaq\n' +
-                              '/rating - Qrup üzrə reytinq', 
-                              '/saxla - oyunu dayandırmaq\n' reply_to_message_id=True)
+                              '/rating - Qrup üzrə reytinq', reply_to_message_id=True)
+
 
 def button(update, context):
     user_id = update.callback_query.from_user.id
