@@ -41,7 +41,7 @@ def help(update, context):
                               '/basla - Yeni oyun başladmaq\n' +
                               '/master - Aparıcı olmaq\n' +
                               '/rating - Qrup üzrə reytinq', reply_to_message_id=True)
-
+                              '/saxla - oyunu dayandırmaq\n'+
 
 def button(update, context):
     user_id = update.callback_query.from_user.id
