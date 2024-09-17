@@ -66,10 +66,10 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/wordsazebot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="💬 Söhbət Qrupumuz", url="https://t.me/grand_villa")
-        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/grand_villa")
-        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/aykhan_s")
+        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/sohbet_akm")
+        sohbet = InlineKeyboardButton(text="💬 Söhbət Qrupumuz", url="https://t.me/sohbet_akm")
+        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/sohbet_akm")
+        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/mondlichtm")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -104,9 +104,9 @@ def set_master(update, context):
 
     game.set_master(update.message.from_user.id)
 
-    show_word_btn = InlineKeyboardButton("👻Sözə bax", callback_data='show_word')
-    change_word_btn = InlineKeyboardButton("♻️Sözü dəyiş", callback_data='change_word')
-
+    show_word_btn = InlineKeyboardButton("Sözə bax🔍", callback_data='show_word')
+    change_word_btn = InlineKeyboardButton("Sözü dəyiş📖", callback_data='change_word')
+    leave_the_word_btn = InlineKeyboardButton("Sözü burax➖", callback_data='leave_the_word')
     keyboard = [[show_word_btn], [change_word_btn]]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
